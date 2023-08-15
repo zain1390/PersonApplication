@@ -31,6 +31,6 @@ public class Car {
     }
 
     public void displayInfo(){
-        System.out.println("Data is:"+make+" "+ model);
+        System.out.println("Data is: "+make+" "+ model);
     }
 }
