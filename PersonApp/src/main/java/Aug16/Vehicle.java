@@ -4,12 +4,11 @@ public class Vehicle {
     private String type;
 
 
-//    public Vehicle() {
-//        this.type = "Sedan";
-//    }
+    public Vehicle() {
+    }
 
     public Vehicle(String type) {
-        this.type = "sedan";
+        this.type = type;
     }
 
     public String getType() {
@@ -19,7 +18,8 @@ public class Vehicle {
     public void setType(String type) {
         this.type = type;
     }
-    public void start(){
-        System.out.println("The "+type+ " vehicle is starting");
+
+    public void start() {
+        System.out.println("The " + type + " is starting.");
     }
 }
