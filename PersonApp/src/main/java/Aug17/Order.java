@@ -1,38 +1,23 @@
 package Aug17;
 
-public class Order extends Product {
-    int orderId;
-    String product;
+public class Order {
+    private Integer orderID;
+    private Product product;
 
-    public Order() {
-    }
-
-    public Order(int orderId, String product) {
-        this.orderId = orderId;
-        this.product = product;
-    }
-
-    public Order(int orderId) {
-        this.orderId = orderId;
-    }
-
-    public Order(String product) {
+    public Order(Integer orderID, Product product) {
+        this.orderID = orderID;
         this.product = product;
     }
 
     public double getTotalPrice() {
-        System.out.println(product.getPrice());
+        return product.getPrice();
     }
 
     @Override
     public String toString() {
-        return "Order{" +
-                "orderId=" + orderId +
-                ", product='" + product + '\'' +
-                '}';
+        return "->Order=" + orderID  + " Product:" + product.getName() + " Total Price:$" + getTotalPrice();
     }
 }
-
 
 /*
 class Order:
@@ -54,4 +39,4 @@ Create Product laptop with name "Laptop" and price 1000.0
 Create Product smartphone with name "Smartphone" and price 500.0
 Create Order order1 with orderId 1 and product as laptop Create Order order2 with orderId 2 and product as smartphone
 Print order1 using toString() method Print order2 using toString() method
- */
+*/

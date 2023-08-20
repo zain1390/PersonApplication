@@ -3,8 +3,6 @@ package Aug17;
 public class Product {
     private String name;
     private double price;
-    public Product() {
-    }
 
     public Product(String name, double price) {
         this.name = name;
@@ -34,12 +32,9 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
-
 }
 
-
 /*
-
 class Product:
 fields: name, price
 constructor(name, price)
