@@ -1,24 +1,18 @@
 package Aug17;
-
 public class Order {
     private Integer orderID;
     private Product product;
-
     public Order(Integer orderID, Product product) {
         this.orderID = orderID;
-        this.product = product;
-    }
-
+        this.product = product;}
     public double getTotalPrice() {
-        return product.getPrice();
-    }
-
+        return product.getPrice();}
     @Override
     public String toString() {
-        return "->Order=" + orderID  + " Product:" + product.getName() + " Total Price:$" + getTotalPrice();
-    }
+        return "->Order=" + orderID  + " Product:"
+                + product.getName() + " Total Price:$"
+                + getTotalPrice();}
 }
-
 /*
 class Order:
 fields:

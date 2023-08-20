@@ -14,8 +14,6 @@ public class Main {
 }
 
 /*
-
-
 class Product:
 fields: name, price
 constructor(name, price)
