@@ -15,9 +15,10 @@ public class Job {
         this.title = title;
         this.salary = salary;
     }
+
     public void displayJobInfo() {
         System.out.println("Title: " + title);
-        System.out.println("Salary: $"+ salary);
+        System.out.println("Salary: $" + salary);
     }
 
 }

@@ -11,7 +11,7 @@ package Aug22;
 public class Main {
     public static void main(String[] args) {
         Job softwareEngineer = new Job("Software Engineer", 80000);
-        Person person = new Person("Alice",30,softwareEngineer);
+        Person person = new Person("Alice", 30, softwareEngineer);
         person.displayInfo();
     }
 }

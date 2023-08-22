@@ -11,6 +11,7 @@ Call job.displayJobInfo()
 */
 
 package Aug22;
+
 public class Person {
     private String name;
     private int age;
@@ -21,9 +22,10 @@ public class Person {
         this.age = age;
         this.job = job;
     }
-    public void displayInfo(){
-        System.out.println("Name: " + name+
-                "Age: "+ age);
+
+    public void displayInfo() {
+        System.out.println("Name: " + name +
+                ", Age: " + age);
         job.displayJobInfo();
     }
 }
