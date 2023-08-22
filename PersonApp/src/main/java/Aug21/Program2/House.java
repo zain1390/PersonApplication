@@ -1,15 +1,20 @@
 package Aug21.Program2;
+
 public class House {
     private int bedrooms;
-    private Address address;
+    private Address address; // has a relation
 
     public House(int bedrooms, Address address) {
-        this.bedrooms = bedrooms; this.address = address;}
+        this.bedrooms = bedrooms;
+        this.address = address;
+    }
+
     public void displayInfo() {
-        System.out.println("\nHouse with '" + bedrooms + "' bedrooms");
+        System.out.println("\nHouse with '" + String.valueOf(bedrooms) + "' bedrooms");
         System.out.println("Located at: " + address.getStreet()
                 + "," + address.getCity());
-    }}
+    }
+}
 /*
 2. Create a `House` class:
 - Declare private variables `bedrooms` and `address` (of type `Address`) to store the number of bedrooms and the address of the house.

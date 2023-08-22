@@ -1,11 +1,16 @@
 package Aug21.Program2;
+
 public class Apartment {
     private int rooms;
     private Address address;
+
     public Apartment(int rooms, Address address) {
-        this.rooms = rooms; this.address = address;}
+        this.rooms = rooms;
+        this.address = address;
+    }
+
     public void displayinfo() {
-        System.out.println("Apartment with '" + rooms + "' rooms");
+        System.out.println("Apartment with '" + (rooms) + "' rooms");
         System.out.println("Located at: " + address.getStreet() + "," + address.getCity());
     }
 }

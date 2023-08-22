@@ -1,11 +1,22 @@
 package Aug21.Program2;
+
 public class Address {
     private String street;
     private String City;
+
     public Address(String street, String city) {
-        this.street = street; City = city;}
-    public String getStreet() {return street;}
-    public String getCity() {return City;}}
+        this.street = street;
+        City = city;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public String getCity() {
+        return City;
+    }
+}
 
 
 /*
