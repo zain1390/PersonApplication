@@ -5,6 +5,6 @@ public class Main {
         Car car = new Car("Sedan",2022,4);
         Car car1 = new Car("SUV",2023,4);
         car.displayInfo();
-        car1.displayInfo();
+        car1 .displayInfo();
     }
 }

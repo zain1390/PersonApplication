@@ -8,7 +8,7 @@ public class Main {
         Order order1 = new Order(1, laptop);
         Order order2 = new Order(2, smartphone);
 
-        System.out.println(order1);
+        System.out.println(order1); 
         System.out.println(order2);
     }
 }

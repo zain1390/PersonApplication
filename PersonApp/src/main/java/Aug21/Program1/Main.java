@@ -1,7 +1,5 @@
 package Aug21.Program1;
-
 import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>();
@@ -20,7 +18,8 @@ public class Main {
         System.out.println("->6.End of the REMOVE() \n");
         numbers.add(10);
         boolean contains = numbers.contains(10);
-        if (contains) System.out.println("Number is added in variable 'contains' \nand now Numbers[] contain 10");
+        if (contains) System.out.println("Number is added in variable 'contains' +" +
+                "\nand now Numbers[] contain 10");
         else System.out.println("Numbers[] doesnt contain 10");
         System.out.println("->7.End of the CONTAINS() \n");
         numbers.clear();
