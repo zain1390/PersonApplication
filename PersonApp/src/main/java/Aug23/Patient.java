@@ -7,22 +7,31 @@
 - Define getter methods for "patientId" and "medicalCondition".
 - Override the "displayInfo()" method to include patient-specific attributes.*/
 package Aug23;
+
 public class Patient extends Person {
     private Integer patientId;
     private String medicalCondition;
+
     public Patient(Person person, Integer patientId,
                    String medicalCondition) {
         super(person.getName(), person.getAge());
         this.patientId = patientId;
-        this.medicalCondition = medicalCondition;}
+        this.medicalCondition = medicalCondition;
+    }
+
     public Integer getPatientId() {
-        return patientId;}
+        return patientId;
+    }
+
     public String getMedicalCondition() {
-        return medicalCondition;}
+        return medicalCondition;
+    }
+
     @Override
     public void displayInfo() {
         super.displayInfo();
-        System.out.println("Patient ID: "+this.patientId+", Condition: "+this.medicalCondition+"\n");
+        System.out.println("Patient ID: " + this.patientId + ", Condition: " + this.medicalCondition + "\n");
 
-    }}
+    }
+}
 

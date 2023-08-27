@@ -8,20 +8,29 @@
 - Override the "displayInfo()" method to include doctor-specific attributes.
  */
 package Aug23;
+
 public class Doctor extends Person {
     private String specialization;
     private Integer doctorId;
+
     public Doctor(Person person, String specialization, Integer doctorId) {
         super(person.getName(), person.getAge());
-        this.specialization = specialization;this.doctorId = doctorId;}
+        this.specialization = specialization;
+        this.doctorId = doctorId;
+    }
+
     public String getSpecialization() {
         return specialization;
     }
+
     public Integer getDoctorId() {
         return doctorId;
     }
+
     @Override
     public void displayInfo() {
         super.displayInfo();
-        System.out.println("Doctor ID: " +this.doctorId+", Specialization: "
-                +this.specialization+"\n");}}
+        System.out.println("Doctor ID: " + this.doctorId + ", Specialization: "
+                + this.specialization + "\n");
+    }
+}
