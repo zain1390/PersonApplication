@@ -13,9 +13,7 @@ public class Doctor extends Person {
     private Integer doctorId;
     public Doctor(Person person, String specialization, Integer doctorId) {
         super(person.getName(), person.getAge());
-        this.specialization = specialization;
-        this.doctorId = doctorId;
-    }
+        this.specialization = specialization;this.doctorId = doctorId;}
     public String getSpecialization() {
         return specialization;
     }
@@ -25,9 +23,5 @@ public class Doctor extends Person {
     @Override
     public void displayInfo() {
         super.displayInfo();
-        System.out.println("Doctor ID: "
-                +this.doctorId+", Specialization: "
-                +this.specialization+"\n");
-
-    }
-}
+        System.out.println("Doctor ID: " +this.doctorId+", Specialization: "
+                +this.specialization+"\n");}}
