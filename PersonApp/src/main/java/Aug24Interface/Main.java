@@ -1,7 +1,7 @@
 package Aug24Interface;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         DatabaseInterface db = new Hibernate();
         DatabaseInterface db2 = new DataJPA();
