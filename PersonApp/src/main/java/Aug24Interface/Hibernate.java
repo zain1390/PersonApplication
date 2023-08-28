@@ -1,5 +1,7 @@
 package Aug24Interface;
 
+import java.util.concurrent.TimeUnit;
+
 public class Hibernate implements DatabaseInterface {
     public boolean isConnected = false;
 
@@ -23,7 +25,7 @@ public class Hibernate implements DatabaseInterface {
     public void saveData(String data) throws InterruptedException {
         if (isConnected = true) {
             System.out.println("Saving data to Hibernate: " + data);
-            Thread.sleep(1000);
+            TimeUnit.SECONDS.sleep(1);
         } else {
             System.out.println("Cannot Save Data. Not Connected to  Hibernate");
             Thread.sleep(1000);
